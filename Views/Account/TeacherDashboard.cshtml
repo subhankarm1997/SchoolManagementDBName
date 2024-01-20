@@ -1,0 +1,8 @@
+﻿@using SchoolManagementDatabaseFirst.SessionManager
+@{
+    var currentUser = UserSessionHelper.GetCurrentUser(Context);
+}
+
+<h2>Welcome to the Teacher Dashboard, @currentUser.FullName!</h2>
+<p>Email: @currentUser.Email</p>
+<!-- Add more content specific to the student dashboard as needed -->
